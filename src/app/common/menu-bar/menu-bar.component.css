@@ -1,0 +1,20 @@
+li{
+  float: left;
+  margin-left: 20px;
+  list-style-type: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+}
+
+li:hover{
+  color: lightcyan;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: rgb(238, 91, 238);
+}
