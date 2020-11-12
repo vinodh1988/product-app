@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 productlist;
+type  = 'All';
 
   constructor(private ps: ProductService) { }
 

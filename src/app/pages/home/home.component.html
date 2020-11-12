@@ -1,2 +1,9 @@
 
-<app-product *ngFor="let x of productlist" [product]="x"></app-product>
+<select [(ngModel)] = "type">
+    <option>High Price</option>
+    <option>Moderate Price</option>
+    <option>Low Price</option>
+    <option>All</option>
+</select>
+<br/>
+<app-product *ngFor="let x of productlist | productfilter:type" [product]="x"></app-product>

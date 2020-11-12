@@ -2,6 +2,6 @@
     <div class="product-image">
            <img src="http://localhost:9999/products/images/{{product.image}}"/>
     </div>
-    <div class="h3">{{product.name}}</div>
-    <div class="h6"> Price {{product.price | currency :"USD"}}</div>
+    <div class="h3">{{product.name | uppercase}}</div>
+    <div class="h6"> Price {{product.price | currency :"INR"}}</div>
 </div>
