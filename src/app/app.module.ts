@@ -2,7 +2,7 @@ import { AngmaterialModule } from './angmaterial/angmaterial.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +13,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProductComponent } from './common/product/product.component';
 import { ProductfilterPipe } from './pipes/productfilter.pipe';
+import { ProductFormComponent } from './common/product-form/product-form.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProductfilterPipe } from './pipes/productfilter.pipe';
     AboutComponent,
     ContactComponent,
     ProductComponent,
-    ProductfilterPipe
+    ProductfilterPipe,
+    ProductFormComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { ProductfilterPipe } from './pipes/productfilter.pipe';
     BrowserAnimationsModule,
     AngmaterialModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,4 +12,11 @@ export class ProductService {
   getProducts(): Observable<object>{
    return this.http.get('http://localhost:9999/products/report');
   }
+
+
+  addProduct(obj): Observable<object>{
+
+    return this.http.post('http://localhost:9999/products/add', obj);
+ }
+
 }
